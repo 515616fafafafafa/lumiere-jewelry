@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIÈRE · 光之珠宝 | 轻奢珠宝品牌官网</title>
+  <meta name="description" content="LUMIÈRE 光之珠宝，以简约设计承载珍贵情感，用精致工艺表达女性优雅。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600&family=Cinzel:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============== HEADER ============== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="brand" aria-label="LUMIÈRE 首页">
+        <span class="brand-mark" aria-hidden="true">L</span>
+        <span class="brand-name">LUMIÈRE</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="主导航">
+        <ul>
+          <li><a href="#hero" class="is-active">首页</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#collections">产品系列</a></li>
+          <li><a href="#stories">客户案例</a></li>
+          <li><a href="#journal">新闻资讯</a></li>
+          <li><a href="#download">下载中心</a></li>
+          <li><a href="#message">在线留言</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-utility">
+        <button class="icon-btn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="购物袋">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 7h14l-1.2 12.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 移动端折叠菜单 -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <ul>
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#collections">产品系列</a></li>
+        <li><a href="#stories">客户案例</a></li>
+        <li><a href="#journal">新闻资讯</a></li>
+        <li><a href="#download">下载中心</a></li>
+        <li><a href="#message">在线留言</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">— Maison de Joaillerie · Est. 2014 —</p>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">Lumière</span>
+          <span class="hero-title-line hero-title-italic">on&nbsp;you.</span>
+        </h1>
+
+        <p class="hero-sub">
+          用珠宝记录珍贵时刻，<br />
+          让每一次佩戴都成为优雅表达。
+        </p>
+
+        <div class="hero-actions">
+          <a href="#collections" class="btn btn-primary">
+            <span>查看产品</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#about" class="btn btn-ghost">了解品牌</a>
+        </div>
+
+        <div class="hero-foot">
+          <div class="hero-foot-line"></div>
+          <p class="hero-foot-text">N°01 — Solitaire · 钻石婚戒系列</p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="images/hero-solitaire.jpg" alt="钻石婚戒悬浮在柔光中的杂志风大片" />
+          <span class="hero-image-tag">FEATURED · N°01</span>
+        </div>
+        <!-- 浮动信息卡：替代"图旁边加文字"的常见做法 -->
+        <aside class="hero-side-card">
+          <p class="side-card-label">限量首发</p>
+          <h4 class="side-card-title">Aurora 极光钻戒</h4>
+          <p class="side-card-price"><span>¥</span> 12,800</p>
+        </aside>
+      </div>
+    </div>
+
+    <!-- 轮播控制：移到 hero-inner 之外，与图像右对齐 -->
+    <div class="hero-controls" aria-label="轮播控制">
+      <div class="hero-progress">
+        <span class="hero-progress-num">01</span>
+        <span class="hero-progress-line"><span class="hero-progress-fill"></span></span>
+        <span class="hero-progress-num">03</span>
+      </div>
+      <div class="hero-arrows">
+        <button class="hero-arrow" aria-label="上一张">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <button class="hero-arrow" aria-label="下一张">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== COLLECTIONS ============== -->
+  <section class="collections" id="collections">
+    <div class="section-header">
+      <p class="eyebrow">— Collections —</p>
+      <h2 class="section-title">探索系列</h2>
+      <p class="section-lead">每一系列皆源自一个隽永意象，由工匠以手工雕琢。</p>
+    </div>
+
+    <div class="collection-grid">
+      <!-- 主推：CAMELLIA 大图 -->
+      <article class="collection-card collection-feature">
+        <a href="#" class="collection-link">
+          <div class="collection-image">
+            <img src="images/collection-camellia.jpg" alt="CAMELLIA 山茶花系列主视觉" />
+          </div>
+          <div class="collection-overlay">
+            <p class="collection-tag">N°01 · Signature</p>
+            <h3 class="collection-name">CAMELLIA</h3>
+            <p class="collection-desc">以山茶花的柔韧花瓣为灵感，呈现刚柔并济的女性力量。</p>
+            <span class="collection-cta">
+              探索系列
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </a>
+      </article>
+
+      <!-- 副卡：STARRY SKY -->
+      <article class="collection-card">
+        <a href="#" class="collection-link">
+          <div class="collection-image">
+            <img src="images/collection-starry.jpg" alt="STARRY SKY 星空系列主视觉" />
+          </div>
+          <div class="collection-overlay">
+            <p class="collection-tag">N°02</p>
+            <h3 class="collection-name">STARRY SKY</h3>
+            <p class="collection-desc">将夜空凝于指间，仿若摘得一颗细碎的星光。</p>
+            <span class="collection-cta">探索系列 →</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- 副卡：FOUR LEAF CLOVER -->
+      <article class="collection-card">
+        <a href="#" class="collection-link">
+          <div class="collection-image">
+            <img src="images/collection-clover.jpg" alt="FOUR LEAF CLOVER 四叶草系列主视觉" />
+          </div>
+          <div class="collection-overlay">
+            <p class="collection-tag">N°03</p>
+            <h3 class="collection-name">FOUR LEAF CLOVER</h3>
+            <p class="collection-desc">四叶草的幸运密码，献给每一位值得被珍视的她。</p>
+            <span class="collection-cta">探索系列 →</span>
+          </div>
+        </a>
+      </article>
+
+      <!-- 副卡：CLASSIC DIAMOND -->
+      <article class="collection-card">
+        <a href="#" class="collection-link">
+          <div class="collection-image">
+            <img src="images/collection-classic.jpg" alt="CLASSIC DIAMOND 经典钻石系列主视觉" />
+          </div>
+          <div class="collection-overlay">
+            <p class="collection-tag">N°04</p>
+            <h3 class="collection-name">CLASSIC DIAMOND</h3>
+            <p class="collection-desc">永不过时的钻石切割，承载一生承诺。</p>
+            <span class="collection-cta">探索系列 →</span>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== FEATURED PRODUCTS ============== -->
+  <section class="featured" id="featured">
+    <div class="section-header section-header-row">
+      <div>
+        <p class="eyebrow">— Featured —</p>
+        <h2 class="section-title">精选单品</h2>
+      </div>
+      <div class="filter-tabs" role="tablist">
+        <button class="tab is-active" data-filter="all">全部</button>
+        <button class="tab" data-filter="ring">戒指</button>
+        <button class="tab" data-filter="necklace">项链</button>
+        <button class="tab" data-filter="earring">耳饰</button>
+        <button class="tab" data-filter="bracelet">手链</button>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card" data-category="ring">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-1.jpg" alt="四叶草 18K 金戒指产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">戒指 · Ring</p>
+            <h3 class="product-name">四叶草 18K 金戒指</h3>
+            <p class="product-price">¥ 3,680</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="necklace">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-2.jpg" alt="星芒 18K 金钻石项链产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">项链 · Necklace</p>
+            <h3 class="product-name">星芒 18K 金钻石项链</h3>
+            <p class="product-price">¥ 5,280</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="bracelet">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-3.jpg" alt="玫瑰金双环手链产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">手链 · Bracelet</p>
+            <h3 class="product-name">玫瑰金双环手链</h3>
+            <p class="product-price">¥ 2,980</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="earring">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-4.jpg" alt="Akoya 珍珠耳钉产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">耳饰 · Earring</p>
+            <h3 class="product-name">Akoya 珍珠耳钉</h3>
+            <p class="product-price">¥ 1,880</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="ring">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-5.jpg" alt="50分钻石婚戒产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">婚戒 · Engagement</p>
+            <h3 class="product-name">璀璨 50分钻石婚戒</h3>
+            <p class="product-price">¥ 12,800</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="necklace">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-6.jpg" alt="水滴形蓝宝石吊坠产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">项链 · Necklace</p>
+            <h3 class="product-name">水滴形蓝宝石吊坠</h3>
+            <p class="product-price">¥ 4,580</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="earring">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-7.jpg" alt="玫瑰金流苏耳坠产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">耳饰 · Earring</p>
+            <h3 class="product-name">玫瑰金流苏耳坠</h3>
+            <p class="product-price">¥ 2,480</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="product-card" data-category="bracelet">
+        <a href="#" class="product-link">
+          <div class="product-image">
+            <img src="images/product-8.jpg" alt="钻石网球手链产品图" />
+          </div>
+          <div class="product-info">
+            <p class="product-cat">手链 · Bracelet</p>
+            <h3 class="product-name">钻石网球手链</h3>
+            <p class="product-price">¥ 8,880</p>
+          </div>
+        </a>
+      </article>
+    </div>
+
+    <div class="featured-foot">
+      <a href="#" class="btn btn-outline">查看全部产品</a>
+    </div>
+  </section>
+
+  <!-- ============== BRAND STORY ============== -->
+  <section class="brand-story" id="about">
+    <div class="story-inner">
+      <div class="story-visual">
+        <div class="story-image">
+          <img src="images/story-editorial.jpg" alt="模特佩戴 LUMIÈRE 项链的杂志大片" />
+        </div>
+        <div class="story-quote">
+          <span class="quote-mark">“</span>
+          <p>每一颗钻石都有自己的语言，<br />我们只是替它说出那句情话。</p>
+          <p class="quote-author">— Marie Lumière · 创始人</p>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <p class="eyebrow">— Our Maison —</p>
+        <h2 class="section-title">以简约设计承载珍贵情感，<br />以精致工艺表达女性优雅。</h2>
+        <p class="story-lead">
+          LUMIÈRE 光之珠宝创立于 2014 年的巴黎左岸，由旅法设计师 Marie Lumière 创办。
+          我们相信，珠宝不只是装饰，而是佩戴者情绪与记忆的载体。
+        </p>
+        <p class="story-body">
+          每一件作品皆由法国与意大利工匠手工完成，钻石均通过 GIA 国际认证，
+          贵金属来自责任矿业认证体系。我们用克制的设计语言，让光，成为作品的主角。
+        </p>
+
+        <ul class="story-points">
+          <li>
+            <span class="point-num">01</span>
+            <div>
+              <h4>原创设计</h4>
+              <p>由法国设计工作室独立完成，每季度限量发布。</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-num">02</span>
+            <div>
+              <h4>手工镶嵌</h4>
+              <p>10 年以上经验工匠逐颗手工镶嵌，确保每一角度完美。</p>
+            </div>
+          </li>
+          <li>
+            <span class="point-num">03</span>
+            <div>
+              <h4>终身保养</h4>
+              <p>全球门店提供终身免费清洗、抛光与刻字服务。</p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-primary">了解更多 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICE BENEFITS ============== -->
+  <section class="services">
+    <div class="services-inner">
+      <div class="service-item">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="4" y="10" width="20" height="14" rx="1"/>
+            <path d="M24 14h4v8a2 2 0 0 1-2 2h-2"/>
+            <path d="M8 10V7a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3"/>
+          </svg>
+        </div>
+        <h4>满额包邮</h4>
+        <p>全国满 ¥999 顺丰包邮，海外直邮。</p>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+            <rect x="5" y="9" width="22" height="16" rx="1"/>
+            <path d="M5 14h22"/>
+            <path d="M16 14v11"/>
+            <path d="M11 9V6h10v3"/>
+          </svg>
+        </div>
+        <h4>精美礼盒</h4>
+        <p>高级丝绒礼盒，搭配手写贺卡。</p>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="16" cy="16" r="11"/>
+            <path d="M16 9v7l5 3"/>
+          </svg>
+        </div>
+        <h4>7×24 售后</h4>
+        <p>全天候在线客服，终身保养服务。</p>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M16 4l3 7h7l-5.5 4 2 7L16 18l-6.5 4 2-7L6 11h7l3-7z"/>
+          </svg>
+        </div>
+        <h4>会员专享</h4>
+        <p>生日礼遇、限定款优先购、生日双倍积分。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOLLOW US ============== -->
+  <section class="follow" id="follow">
+    <div class="follow-inner">
+      <div class="follow-text">
+        <p class="eyebrow">— Stay In Touch —</p>
+        <h2 class="section-title">关注我们</h2>
+        <p class="follow-lead">
+          获取新品资讯、限定系列与专属定制服务。<br />
+          扫码加入 LUMIÈRE 私享社群。
+        </p>
+        <ul class="follow-list">
+          <li>· 每月新品首发提醒</li>
+          <li>· 限定款会员优先购</li>
+          <li>· 门店活动与手工体验沙龙</li>
+        </ul>
+      </div>
+
+      <div class="follow-qrs">
+        <div class="qr-card">
+          <div class="qr-placeholder">
+            <img src="images/qr-wechat.png" alt="公众号二维码" />
+          </div>
+          <p class="qr-title">关注公众号</p>
+          <p class="qr-sub">LUMIÈRE 光之珠宝</p>
+        </div>
+        <div class="qr-card">
+          <div class="qr-placeholder">
+            <img src="images/qr-service.png" alt="客服微信二维码" />
+          </div>
+          <p class="qr-title">添加客服</p>
+          <p class="qr-sub">1 对 1 专属顾问</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">L</span>
+          <span class="brand-name">LUMIÈRE</span>
+        </div>
+        <p class="footer-tagline">
+          用珠宝记录珍贵时刻，<br />
+          让每一次佩戴都成为优雅表达。
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="微博">微</a>
+          <a href="#" aria-label="小红书">红</a>
+          <a href="#" aria-label="抖音">抖</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>关于产品</h5>
+        <ul>
+          <li><a href="#">所有产品</a></li>
+          <li><a href="#">产品系列</a></li>
+          <li><a href="#">定制服务</a></li>
+          <li><a href="#">尺码指南</a></li>
+          <li><a href="#">证书查询</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>关于退换</h5>
+        <ul>
+          <li><a href="#">退换货政策</a></li>
+          <li><a href="#">物流与配送</a></li>
+          <li><a href="#">发票申请</a></li>
+          <li><a href="#">保养与维修</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>关于售后</h5>
+        <ul>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">在线留言</a></li>
+          <li><a href="#">门店地址</a></li>
+          <li><a href="#">招聘合作</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>关注我们</h5>
+        <ul>
+          <li><a href="#">微信公众号</a></li>
+          <li><a href="#">小红书账号</a></li>
+          <li><a href="#">抖音直播</a></li>
+          <li><a href="#">邮件订阅</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2014–2026 LUMIÈRE Joaillerie. All rights reserved.</p>
+      <p>
+        <a href="#">沪 ICP 备 2014XXXXXX 号</a>
+        <span class="dot">·</span>
+        <a href="#">沪公网安备 31010XXXXXX 号</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============== FLOATING CONTACT ============== -->
+  <aside class="floating-contact" id="floatingContact" aria-label="快捷联系">
+    <!-- 默认折叠态：单个 FAB -->
+    <button class="fab" id="fabToggle" aria-label="联系我们" aria-expanded="false">
+      <svg class="fab-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+      <svg class="fab-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- 展开态：胶囊菜单 -->
+    <div class="fab-panel" id="fabPanel" hidden>
+      <a href="tel:400-826-2014" class="fab-item">
+        <span class="fab-item-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/>
+          </svg>
+        </span>
+        <span class="fab-item-text">
+          <span class="fab-item-label">客服热线</span>
+          <span class="fab-item-value">400-826-2014</span>
+        </span>
+      </a>
+      <a href="#" class="fab-item">
+        <span class="fab-item-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 8.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm6 0a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/>
+            <path d="M3 12c0-4 4-7 9-7s9 3 9 7-4 7-9 7c-1 0-2-.1-3-.3L6 20l1-3c-2.5-1.3-4-3.5-4-5Z"/>
+          </svg>
+        </span>
+        <span class="fab-item-text">
+          <span class="fab-item-label">微信咨询</span>
+          <span class="fab-item-value">扫码添加顾问</span>
+        </span>
+      </a>
+      <a href="#" class="fab-item">
+        <span class="fab-item-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/>
+          </svg>
+        </span>
+        <span class="fab-item-text">
+          <span class="fab-item-label">在线客服</span>
+          <span class="fab-item-value">立即对话</span>
+        </span>
+      </a>
+      <button class="fab-item fab-item-back" id="backToTop" type="button">
+        <span class="fab-item-icon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </span>
+        <span class="fab-item-text">
+          <span class="fab-item-label">返回顶部</span>
+        </span>
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
